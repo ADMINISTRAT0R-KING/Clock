@@ -8,7 +8,7 @@
   "theme_color": "#000",
   "categories": ["Website", "Test", "PWA", "Clock", "DigitalClock"],
   "description": "Nothing",
-  "start_url": "/",
+  "start_url": "https://administrat0r-king.github.io/Clock/",
   "scope": "/",
   "icons": [{
     "src": "/ASSETS/0.png",
