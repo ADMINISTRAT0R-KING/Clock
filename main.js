@@ -25,6 +25,7 @@
     e.preventDefault();
     window.InstallPrompt=e;
     window.onclick=()=>{
+      navigator.vibrate();
       window.InstallPrompt.prompt();
     }
   });
