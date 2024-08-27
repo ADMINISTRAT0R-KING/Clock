@@ -12,10 +12,8 @@
   if(!(navigator.serviceWorker || 'serviceWorker' in navigator)){
     confirm('Browser Support error: Unable To Register Service-Worker Browser Dose Not Support Service-Workers!')
   }else{
-    navigator.serviceWorker.register('./sw.js').then((reg)=>{
-      reg.update().catch((err)=>{
-      confirm('Service-Worker Update error: '+err.message);
-    })
+    navigator.serviceWorker.register('/Clock/sw.js').then((reg)=>{
+      //reg
     }).catch((err)=>{
       confirm('Service-Worker Registration error: '+err.message);
     })
