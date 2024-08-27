@@ -1,0 +1,72 @@
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+    user-zoom: none;
+    
+    font-family: "CustomFont",sans-serif,serif;
+    color: #ffffffdd;
+    font-weight: lighter;
+  }
+  img{
+    pointer-events: none;
+    width: 100%;
+    height: 100%;
+  }
+  html,body{
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+  @font-face {
+    font-family: "CustomFont";
+    src: url("./ASSETS/0.ttf");
+  }
+  :root{
+    --bg-main-blur: 20px;
+  }
+  @keyframes background-change{
+    0%,5%,100%{
+      background-image: url("./ASSETS/0.jpeg");
+    }20%,25%{
+      background-image: url("./ASSETS/1.jpeg");
+    }40%,45%{
+      background-image: url("./ASSETS/2.jpeg");
+    }60%,65%{
+      background-image: url("./ASSETS/3.jpeg");
+    }80%,85%{
+      background-image: url("./ASSETS/4.jpeg");
+    }
+  }
+  body{
+    animation: background-change 30s linear infinite;
+    background: #000 url("./ASSETS/0.jpeg") center no-repeat fixed;
+    background-size: cover;
+    backdrop-filter: blur(var(--bg-main-blur));
+    display: grid;
+    place-items: center;
+  }
+  main{
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 0 50px 0;
+    gap: 5px;
+  }
+  main > section{
+    width: clamp(200px,250px,50%);
+    height: clamp(200px,250px,50%);
+    background: transparent;
+    display: grid;
+    grid-template-rows: 7.5fr 1fr;
+    grid-template-columns: 1fr;
+    place-items: center;
+  }
+  main > section > div{
+    font-size: 750%;
+  }

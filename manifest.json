@@ -1,0 +1,18 @@
+{
+  "name": "KRUSHNA",
+  "short_name": "Clock",
+  "id": "V1",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#000",
+  "theme_color": "#000",
+  "categories": ["Website", "Test", "PWA", "Clock", "DigitalClock"],
+  "description": "Nothing",
+  "start_url": "/",
+  "scope": "/",
+  "icons": [{
+    "src": "/ASSETS/0.png",
+    "sizes": "2048x2048",
+    "type": "image/png"
+  }]
+}
