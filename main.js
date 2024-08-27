@@ -1,5 +1,5 @@
   //Clock Working Making Clock Work
-  function TimeChange(CurrentTime=new Date().toLocaleTimeString('en-us',{hour12: false,hour: '2-digit',minute: '2-digit',second: '2-digit'}).split(':')){
+  function TimeChange(CurrentTime=new Date().toLocaleTimeString('en-us',{hour12: true,hour: '2-digit',minute: '2-digit',second: '2-digit'}).slice(0,-3).split(':')){
     d_hours.innerText=CurrentTime[0];
     d_minuts.innerText=CurrentTime[1];
     d_seconds.innerText=CurrentTime[2];
